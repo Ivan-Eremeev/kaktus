@@ -1,0 +1,351 @@
+a {
+	color: @blackText;
+	text-decoration: none;
+	&:hover {
+		color: @blackText;
+		text-decoration: underline;
+	}
+	&:visited {
+		color: #8F8F00;
+	}
+}
+.header {
+	&_container {
+		padding-top: 50px;
+		padding-bottom: 30px;
+		background-color: @yellow;
+	}
+	&_col {
+		height: 220px;
+		&--2 {
+			padding-bottom: 20px;
+		}
+		&--4 {
+			padding-left: 50px;
+		}
+	}
+}
+.logo {
+	max-width: 262px;
+	height: 100%;
+	display: block;
+	background-image: url(../img/logo.png);
+	background-size: 100% 100%;
+}
+.poligrafy {
+	height: 100%;
+	background-image: url(../img/poligrafy.png);
+	background-size: 100% 100%;
+}
+.men {
+	height: 100%;
+	background-image: url(../img/men.png);
+	background-size: 135px 100%;
+	background-repeat: no-repeat;
+}
+.contacts {
+	&_block {
+	display: block;
+	padding-left: 40px;
+	margin-bottom: 15px;
+	font-size: 19px;
+	position: relative;
+	user-select: none;
+	&:visited {
+		color: @blackText;
+	}
+	&--tel:after {
+		width: 30px;
+		height: 30px;
+		background-image: url(../img/tel.png);
+	}
+	&--tel-2:after {
+		width: 30px;
+		height: 30px;
+		background-image: url(../img/tel-2.png);
+	}
+	&--mail:after {
+		width: 32px;
+		height: 32px;
+		background-image: url(../img/email.png);
+	}
+	&--adress:after {
+		width: 30px;
+		height: 40px;
+		background-image: url(../img/adress.png);
+	}
+	&--insta:after {
+		width: 32px;
+		height: 32px;
+		background-image: url(../img/insta.png);
+	}
+	&:after {
+		content: '';
+		display: block;
+		background-size: 100% 100%;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		transform: translate(0,-15px);
+		}
+	}
+	&_text {
+		display: block;
+	}
+	&_link {
+		display: block;
+		font-weight: bold;
+		&--big {
+			font-size: 34px;
+		}
+		&--footer {
+			font-size: 26px;
+		}
+		&--footer-big {
+			font-size: 40px;
+		}
+		&--footer-big2 {
+			font-size: 30px;
+		}
+	}
+}
+
+
+.menu {
+	&_container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	&_row {
+		margin-left: 0;
+		margin-right: 0;
+	}
+	&_line {
+		height: 30px;
+		margin-top: -20px;
+		background-image: url(../img/line.png);
+		background-size: cover;
+		position: relative;
+		z-index: 2;
+	}
+	&_cont-line {
+		margin-top: -20px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		background-color: @black;
+		position: relative;
+		z-index: 1;
+	}
+	&_item {
+		display: block;
+		padding-bottom: 120px;
+		margin-bottom: 20px;
+		background-size: 100px 100px;
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		text-align: center;
+		user-select: none;
+		color: @yellowText;
+		&:hover {
+			color: @yellowText;
+			text-decoration: none;
+		}
+		&:visited {
+			color: @yellowText;
+			text-decoration: none;
+		}
+		&--1 {
+			background-image: url(../img/menu-1.png);
+		}
+		&--2 {
+			background-image: url(../img/menu-2.png);
+		}
+		&--3 {
+			background-image: url(../img/menu-3.png);
+		}
+		&--4 {
+			background-image: url(../img/menu-4.png);
+		}
+		&--5 {
+			background-image: url(../img/menu-5.png);
+		}
+		&--6 {
+			background-image: url(../img/menu-6.png);
+		}
+	}
+	&_text {
+		display: inline-block;
+		height: 30px;
+		padding-left: 40px;
+		padding-top: 6px;
+		background-image: url(../img/arrow.png);
+		background-size: 30px 30px;
+		background-position: left center;
+		background-repeat: no-repeat;
+		text-transform: uppercase;
+	}
+}
+.sidebar-content {
+	margin-top: -20px;
+	position: relative;
+	&_container {
+		background-image: url(../img/bg.jpg);
+		background-size: cover;
+	}
+}
+.sidebar {
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 200px;
+	background-color: rgba(185,255,79,.6);
+	background-image: url(../img/picture.png);
+	background-size: 350px 260px;
+	background-repeat: no-repeat;
+	background-position: right bottom 50px;
+	position: relative;
+	&:after {
+		width: 50px;
+		height: 50px;
+		content: '';
+		display: block;
+		background-image: url(../img/ball.png);
+		background-size: 100% 100%;
+		position: absolute;
+		top: 40px;
+		right: 50px;
+	}
+	&:before {
+		width: 60px;
+		height: 60px;
+		content: '';
+		display: block;
+		background-image: url(../img/ball.png);
+		background-size: 100% 100%;
+		position: absolute;
+		top: 50%;
+		right: 70px;
+	}
+	&_item {
+		margin-bottom: 8px;
+	}
+	&_link {
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	&_item-inner {
+		margin-bottom: 6px;
+		padding-left: 14px;
+		font-size: 20px;
+		&:first-child {
+			margin-top: 4px;
+		}
+	}
+	&_line {
+		width: 100%;
+		height: 50px;
+		background-image: url(../img/line-2.png);
+		background-size: cover;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	&_close {
+		display: none;
+		width: 40px;
+		height: 40px;
+		background-color: @yellow;
+		border-radius: 50%;
+		border: 1px solid #373435;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 999;
+		cursor: pointer;
+		user-select: none;
+		&:after {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 3px;
+			background-color: #373435;
+			transform: rotate(45deg);
+			position: absolute;
+			top: 18px;
+			left: 7px;
+		}
+		&:before {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 3px;
+			background-color: #373435;
+			transform: rotate(-45deg);
+			position: absolute;
+			top: 18px;
+			left: 7px;
+		}
+	}
+}
+.content {
+	min-height: 300px;
+	padding-top: 30px;
+}
+.sidebar-btn-line {
+	display: none;
+	height: 70px;
+	margin-bottom: 20px;
+	margin-left: -15px;
+	margin-right: -15px;
+	padding-top: 10px;
+	background-color: @yellow;
+}
+.sidebar-btn {
+	width: 70px;
+	height: 70px;
+	margin-left: auto;
+	background-image: url(../img/menu-btn.png);
+	background-size: 100% 100%;
+}
+
+
+
+
+.contactsfoot {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: @yellow;
+}
+.insta {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 30px;
+	&_link {
+		text-decoration: none;
+		&:hover {
+			text-decoration: none;
+		}
+		&:visited {
+			color: @blackText;
+			text-decoration: none;
+		}
+	}
+	span {
+		display: inline-block;
+	}
+	&_left {
+		text-align: right;
+		padding-right: 15px;
+	}
+	&_center {
+		width: 54px;
+		height: 54px;
+		background-image: url(../img/insta.png);
+		background-size: 100% 100%;
+	}
+	&_right {
+		text-align: left;
+		padding-left: 15px;
+	}
+}
